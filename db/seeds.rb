@@ -133,4 +133,8 @@ cat3.products.create!({
 })
 
 
+#users
+
+user1 = User.find_or_create_by! firstname: 'Karan', lastname: 'Singh', email: 'a@a', password_digest: 'a'
+
 puts "DONE!"
