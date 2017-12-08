@@ -4,6 +4,13 @@
     <h1>My Cart</h1>
   </header>
 
+
+  <%if cart.blank?%>
+    <p>Your shopping card is empty.</p>
+  <%=link_to 'Home', :root, class: 'btn btn-info' %>
+  
+  
+    <%else%>
   <div class="panel panel-default items">
     <table class="table table-bordered">
       <thead>
@@ -49,5 +56,9 @@
       <% end %>
     </div>
   </div>
+
+   
+  <%end%>
+
 
 </section>
