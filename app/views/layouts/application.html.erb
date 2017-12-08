@@ -9,7 +9,7 @@
 <body>
 
 
-<% if current_user %>
+<% if @current_user %>
   Signed in as <%= current_user.firstname %> | <%= link_to "Logout", '/logout' %>
 <% else %>
   <%= link_to 'Login', '/login' %> | <%= link_to 'Signup', '/signup' %>
