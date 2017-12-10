@@ -138,3 +138,7 @@ cat3.products.create!({
 user1 = User.find_or_create_by! firstname: 'Karan', lastname: 'Singh', email: 'a@a', password_digest: 'a'
 
 puts "DONE!"
+
+
+review1 = Product.first.reviews(rating: 5, description: 'ayt')
+review1 = Product.last.reviews(rating: 2, description: 'bad')

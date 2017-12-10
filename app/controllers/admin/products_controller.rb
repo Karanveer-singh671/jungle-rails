@@ -5,6 +5,18 @@ class Admin::ProductsController < ApplicationController
   def index
     @products = Product.order(id: :desc).all
   end
+ 
+
+  def show
+    @review = Review.new
+  end
+  
+#   private
+#     # Use callbacks to share common setup or constraints between actions.
+#     def set_product
+#       @mom_dog = MomDog.find(params[:id])
+#     end
+# end
 
   def new
     @product = Product.new
